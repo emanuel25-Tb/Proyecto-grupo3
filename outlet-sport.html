@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,167 +8,219 @@
 </head>
 <body>
 
-    <header class="encabezado">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo OutletSport">
-        </div>
+    <div class="contenedor">
 
-        <nav class="menu">
-            <a href="#inicio">INICIO</a>
-            <a href="#mujer">MUJER</a>
-            <a href="#ninos">NIÑOS</a>
-        </nav>
+        <header class="encabezado">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo OutletSport">
+            </div>
 
-        <div class="busqueda">
-            <input type="search" aria-label="Buscar productos">
-            <button aria-label="Buscar">⌕</button>
-        </div>
+            <nav class="menu">
+                <a href="#hombre">HOMBRE</a>
+                <a href="#mujer">MUJER</a>
+                <a href="#ninos">NIÑOS</a>
+            </nav>
 
-        <div class="iconos">
-            <a href="#cuenta" aria-label="Mi cuenta">♙</a>
-            <a href="#carrito" aria-label="Carrito">🛒</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="banner" id="inicio">
-            <img src="img/banner.jpg" alt="Ofertas de OutletSport">
-            <div class="texto-banner">
-                <h1>OUTLETSPORT</h1>
-                <div class="oferta">
-                    <h2>HASTA<br><span>50% DSCTO.</span></h2>
+            <div class="acciones">
+                <div class="busqueda">
+                    <span class="lupa">&#9906;</span>
+                    <input type="search" aria-label="Buscar productos">
                 </div>
-                <p>COMPRA AHORA</p>
+
+                <a href="#cuenta" class="icono-cuenta" aria-label="Mi cuenta">
+                    <span class="cabeza"></span>
+                    <span class="cuerpo"></span>
+                </a>
+
+                <a href="#carrito" class="icono-carrito" aria-label="Carrito">&#128722;</a>
             </div>
-        </section>
+        </header>
 
-        <section class="productos">
-            <h2>DESTACADOS DE LA SEMANA</h2>
+        <main>
+            <section class="banner" id="hombre">
+                <h1 class="titulo-banner">OUTLET<span>SPORT</span></h1>
 
-            <div class="lista-productos">
-                <article class="producto">
-                    <img src="img/zapatilla1.jpg" alt="Zapatillas deportivas negras">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo running</p>
-                    <strong>S/ 129.90</strong>
-                </article>
+                <div class="contenido-banner">
+                    <div class="lado-izquierdo">
+                        <div class="oferta">
+                            <p>HASTA</p>
+                            <p class="porcentaje">50% DSCTO.</p>
+                        </div>
 
-                <article class="producto">
-                    <img src="img/zapatilla2.jpg" alt="Zapatillas deportivas rosadas">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo urbano</p>
-                    <strong>S/ 149.90</strong>
-                </article>
+                        <div class="marcas">
+                            <span>NIKE</span>
+                            <span class="separador">|</span>
+                            <span>PUMA</span>
+                            <span class="separador">|</span>
+                            <span>ADIDAS</span>
+                        </div>
 
-                <article class="producto">
-                    <img src="img/zapatilla3.jpg" alt="Zapatillas deportivas blancas">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo clásico</p>
-                    <strong>S/ 119.90</strong>
-                </article>
+                        <a href="#destacados" class="boton-comprar">COMPRAR AHORA</a>
+                    </div>
 
-                <article class="producto">
-                    <img src="img/zapatilla4.jpg" alt="Zapatillas deportivas grises">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo casual</p>
-                    <strong>S/ 139.90</strong>
-                </article>
+                    <div class="oferta-producto">
+                        <img src="img/banner-polo.png" alt="Polo deportivo rojo">
+                        <span class="etiqueta">-30%</span>
+                        <p class="antes">Antes: S/119</p>
+                        <p class="ahora">S/79</p>
+                    </div>
 
-                <article class="producto">
-                    <img src="img/zapatilla5.jpg" alt="Zapatillas deportivas claras">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo clásico</p>
-                    <strong>S/ 109.90</strong>
-                </article>
+                    <div class="oferta-producto">
+                        <img src="img/banner-chimpunes1.png" alt="Chimpunes rosados">
+                        <span class="etiqueta">-40%</span>
+                        <p class="antes">Antes: S/379</p>
+                        <p class="ahora">S/229</p>
+                    </div>
+
+                    <div class="oferta-producto">
+                        <img src="img/banner-chimpunes2.png" alt="Chimpunes blancos">
+                        <span class="etiqueta">-35%</span>
+                        <p class="antes">Antes: S/389</p>
+                        <p class="ahora">S/249</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="productos" id="destacados">
+                <h2>DESTACADA DE LA SEMANA</h2>
+
+                <div class="lista-productos">
+                    <article class="producto">
+                        <img src="img/zapatilla1.jpg" alt="Adidas galaxy 7">
+                        <h3>Adidas galaxy 7</h3>
+                        <strong>S/140</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/zapatilla2.jpg" alt="Nike zapatillas revolution 8">
+                        <h3>Nike zapatillas revolutión 8</h3>
+                        <strong>S/130.50</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/polo1.jpg" alt="Nike short-polo">
+                        <h3>Nike short-polo</h3>
+                        <strong>S/99</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/zapatilla3.jpg" alt="Adidas chimpunes predator">
+                        <h3>Adidas chimpunes predator</h3>
+                        <strong>S/179</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/zapatilla4.jpg" alt="Nike court vision">
+                        <h3>Nike court vision</h3>
+                        <strong>S/178</strong>
+                    </article>
+                </div>
+            </section>
+
+            <section class="productos" id="mujer">
+                <h2>NUEVOS INGRESOS OUTLET</h2>
+
+                <div class="lista-productos">
+                    <article class="producto">
+                        <img src="img/zapatilla6.jpg" alt="Adidas zapatillas own the game">
+                        <h3>Adidas zapatillas own the game</h3>
+                        <strong>S/229</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/zapatilla7.jpg" alt="Nike zapatillas pegasus">
+                        <h3>Nike zapatillas pegasus</h3>
+                        <strong>S/400</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/zapatilla8.jpg" alt="Nike zapatillas free metcon">
+                        <h3>Nike zapatillas free metcon</h3>
+                        <strong>S/480</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/zapatilla9.jpg" alt="Puma zapatillas blaze lite">
+                        <h3>Puma zapatillas blaze lite</h3>
+                        <strong>S/195</strong>
+                    </article>
+
+                    <article class="producto">
+                        <img src="img/zapatilla10.jpg" alt="Adidas zapatillas rumblaze">
+                        <h3>Adidas zapatillas rumblaze</h3>
+                        <strong>S/389</strong>
+                    </article>
+                </div>
+            </section>
+
+            <section class="nosotros" id="ninos">
+                <img src="img/deportista.jpg" alt="Deportista corriendo en la ciudad">
+
+                <div class="texto-nosotros">
+                    <h2>NOSOTROS</h2>
+                    <p>
+                        En Outletsport, nacimos con la idea de ofrecer una
+                        alternativa para quienes buscan productos 100% originales
+                        de Nike, Adidas y Puma a precios competitivos, para que
+                        nuestros clientes puedan encontrar zapatillas y ropa de sus
+                        marcas favoritas sin tener que pagar los precios habituales
+                        de las grandes tiendas.
+                    </p>
+                    <p>
+                        Queremos construir un espacio donde comprar de manera
+                        online sea una experiencia segura, sencilla y transparente.
+                    </p>
+                    <p>Outletsport: marcas originales, precios que sorprenden.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pie">
+            <div class="columnas-pie">
+                <div class="columna">
+                    <h3>SÍGUENOS EN:</h3>
+                    <div class="redes">
+                        <a href="#" class="red whatsapp" aria-label="WhatsApp">W</a>
+                        <a href="#" class="red facebook" aria-label="Facebook">f</a>
+                        <a href="#" class="red tiktok" aria-label="TikTok">&#9834;<span>TikTok</span></a>
+                    </div>
+                </div>
+
+                <div class="columna">
+                    <h3>NUESTROS PRODUCTOS</h3>
+                    <a href="#hombre">HOMBRE</a>
+                    <a href="#mujer">MUJER</a>
+                    <a href="#ninos">NIÑOS</a>
+                    <a href="#destacados">DESTACADO DE LA SEMANA</a>
+                    <a href="#mujer">NUEVOS INGRESOS</a>
+                    <a href="#">ZAPATILLAS</a>
+                    <a href="#">ROPAS</a>
+                </div>
+
+                <div class="columna">
+                    <h3>AYUDA</h3>
+                    <a href="#">CONTACTANOS</a>
+                    <a href="#">TÉRMINOS Y CONDICIONES</a>
+                    <a href="#">DEVOLUCIONES</a>
+                    <a href="#">LIBRO DE RECLAMACIONES</a>
+                    <a href="#ninos">SOBRE NOSOTROS</a>
+                </div>
+
+                <div class="columna">
+                    <h3>MÉTODOS DE PAGO</h3>
+                    <div class="pagos">
+                        <span class="pago visa">VISA</span>
+                        <span class="pago mastercard"><i></i><i></i></span>
+                        <span class="pago yape">yape</span>
+                        <span class="pago plin">plin</span>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section class="productos" id="mujer">
-            <h2>NUESTROS INGRESOS OUTLET</h2>
+            <p class="copy">© 2026 Outletsport SAC, RUC 10747493674 | Todos los derechos reservados.</p>
+        </footer>
 
-            <div class="lista-productos">
-                <article class="producto">
-                    <img src="img/zapatilla6.jpg" alt="Zapatillas negras">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo running</p>
-                    <strong>S/ 129.90</strong>
-                </article>
-
-                <article class="producto">
-                    <img src="img/zapatilla7.jpg" alt="Zapatillas verdes">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo entrenamiento</p>
-                    <strong>S/ 139.90</strong>
-                </article>
-
-                <article class="producto">
-                    <img src="img/zapatilla8.jpg" alt="Zapatillas rosadas">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo urbano</p>
-                    <strong>S/ 119.90</strong>
-                </article>
-
-                <article class="producto">
-                    <img src="img/zapatilla9.jpg" alt="Zapatillas grises">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo casual</p>
-                    <strong>S/ 149.90</strong>
-                </article>
-
-                <article class="producto">
-                    <img src="img/zapatilla10.jpg" alt="Zapatillas negras y blancas">
-                    <h3>Zapatillas deportivas</h3>
-                    <p>Modelo clásico</p>
-                    <strong>S/ 129.90</strong>
-                </article>
-            </div>
-        </section>
-
-        <section class="nosotros" id="ninos">
-            <img src="img/deportista.jpg" alt="Deportista entrenando al aire libre">
-
-            <div class="texto-nosotros">
-                <h2>NOSOTROS</h2>
-                <p>
-                    En OutletSport nos dedicamos a ofrecer productos deportivos
-                    de calidad para acompañarte en cada entrenamiento. Contamos
-                    con zapatillas, ropa y accesorios diseñados para brindarte
-                    comodidad, estilo y rendimiento. Nuestro compromiso es
-                    ofrecer variedad, buenos precios y una experiencia de compra
-                    pensada para todos los amantes del deporte.
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="pie">
-        <div>
-            <h3>SÍGUENOS</h3>
-            <a href="#">WhatsApp</a>
-            <a href="#">Facebook</a>
-            <a href="#">TikTok</a>
-        </div>
-
-        <div>
-            <h3>NUESTROS PRODUCTOS</h3>
-            <a href="#mujer">Zapatillas</a>
-            <a href="#mujer">Ropa deportiva</a>
-            <a href="#ninos">Accesorios</a>
-        </div>
-
-        <div>
-            <h3>AYUDA</h3>
-            <a href="#">Preguntas frecuentes</a>
-            <a href="#">Envíos y devoluciones</a>
-            <a href="#">Contáctanos</a>
-        </div>
-
-        <div>
-            <h3>MÉTODOS DE PAGO</h3>
-            <p>VISA · Mastercard</p>
-            <p>Yape · Plin</p>
-        </div>
-    </footer>
+    </div>
 
 </body>
 </html>
